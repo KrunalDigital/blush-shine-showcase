@@ -3,21 +3,26 @@ import { useState } from "react";
 import hairToolsImage from "@/assets/hair-tools.jpg";
 import spaImage from "@/assets/spa-treatment.jpg";
 import heroImage from "@/assets/hero-salon.jpg";
+import salonInterior from "@/assets/gallery-salon-1.jpg";
+import spaRoom from "@/assets/gallery-spa-2.jpg";
+import makeupProducts from "@/assets/gallery-makeup.jpg";
+import receptionArea from "@/assets/gallery-reception.jpg";
+import hairProducts from "@/assets/gallery-products.jpg";
+import nailStation from "@/assets/gallery-nails.jpg";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Using imported images multiple times to simulate a gallery
   const galleryImages = [
     { src: heroImage, category: "Salon Interior", alt: "Luxurious salon interior" },
     { src: spaImage, category: "Spa Services", alt: "Relaxing spa treatment room" },
     { src: hairToolsImage, category: "Hair Styling", alt: "Professional hair styling tools" },
-    { src: heroImage, category: "Salon Interior", alt: "Modern salon styling stations" },
-    { src: spaImage, category: "Spa Services", alt: "Peaceful spa ambiance" },
-    { src: hairToolsImage, category: "Hair Styling", alt: "Premium hair care products" },
-    { src: heroImage, category: "Salon Interior", alt: "Elegant salon decor" },
-    { src: spaImage, category: "Spa Services", alt: "Massage therapy room" },
-    { src: hairToolsImage, category: "Hair Styling", alt: "Hair styling essentials" },
+    { src: salonInterior, category: "Salon Interior", alt: "Modern salon styling stations with mirrors" },
+    { src: spaRoom, category: "Spa Services", alt: "Peaceful spa massage room" },
+    { src: makeupProducts, category: "Makeup", alt: "Premium makeup brushes and products" },
+    { src: receptionArea, category: "Salon Interior", alt: "Elegant reception and waiting area" },
+    { src: hairProducts, category: "Hair Styling", alt: "Luxury hair care products" },
+    { src: nailStation, category: "Nail Services", alt: "Professional nail salon station" },
   ];
 
   return (
